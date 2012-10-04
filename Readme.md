@@ -1,3 +1,5 @@
+A few tips:
+
 https://gist.github.com/3835483
 
 Please also read:
