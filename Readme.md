@@ -6,6 +6,8 @@ Please also read:
 
 http://javascript.crockford.com/code.html
 
+Ignore part about tabs though.  Haha.  
+
 
 
 # Javascript/Node.js Style Guide
