@@ -1,5 +1,11 @@
 https://gist.github.com/3835483
 
+Please also read:
+
+http://javascript.crockford.com/code.html
+
+
+
 # Javascript/Node.js Style Guide
 
 This is a guide for writing consistent and aesthetically pleasing node.js code.
