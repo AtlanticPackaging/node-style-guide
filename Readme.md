@@ -50,6 +50,30 @@ Limit your lines to 80 characters. Yes, screens have gotten much bigger over the
 last few years, but your brain has not. Use the additional room for split screen,
 your editor supports that, right?
 
+## Use function expressions not function declarations
+
+1. Makes it easier to understand “functions as an object”.
+2. It enforces good semicolon habits.(function declarations are the only instance in javascript where you don't use semi-colons)
+3. Doesn’t have much of the baggage traditionally associated with functions and scope.
+
+
+*Right*
+
+```js
+var _foo = function () {
+
+};
+```
+
+*Wrong*
+
+```js
+function _foo() {
+  
+}
+```
+
+
 ## Use single quotes
 
 Use single quotes, unless you are writing JSON.
