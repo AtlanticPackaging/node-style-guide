@@ -50,30 +50,20 @@ Limit your lines to 80 characters. Yes, screens have gotten much bigger over the
 last few years, but your brain has not. Use the additional room for split screen,
 your editor supports that, right?
 
-## Use function expressions not function declarations
-
-1. Makes it easier to understand “functions as an object”.
-2. It enforces good semicolon habits.(function declarations are the only instance in javascript where you don't use semi-colons)
-3. Doesn’t have much of the baggage traditionally associated with functions and scope.
-
-
-*Right*
+In ES5 you can use '\' in strings to indicate a new line.
 
 ```js
-var _foo = function () {
 
-};
+    var options = {
+        sql: 'SELECT a.lat as arriveLat, a.lng as arriveLng, b.lat as departLat, \
+              b.lng as departLng from \
+  		  flight f left join port a on f.arriveAirport = a.code left join port b on f.departAirport = b.code \
+			  WHERE f.id = ?',
+        values: [flightId]
+    };
+
+
 ```
-
-*Wrong*
-
-```js
-function _foo() {
-  
-}
-```
-
-
 ## Use single quotes
 
 Use single quotes, unless you are writing JSON.
