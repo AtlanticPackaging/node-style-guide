@@ -53,7 +53,6 @@ your editor supports that, right?
 In ES5 you can use '\' in strings to indicate a new line.
 
 ```js
-
     var options = {
         sql: 'SELECT a.lat as arriveLat, a.lng as arriveLng, b.lat as departLat, \
               b.lng as departLng from \
@@ -61,9 +60,8 @@ In ES5 you can use '\' in strings to indicate a new line.
 			  WHERE f.id = ?',
         values: [flightId]
     };
-
-
 ```
+
 ## Use single quotes
 
 Use single quotes, unless you are writing JSON.
